@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Parameter Practice]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Parameters(failed)">
+    <parameter name="searchValue" value="java programming mug"/>
+    <classes>
+      <class name="com.test.etsy.test.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="set"/>
+          <include name="validateSearch" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.test.etsy.test.HomePageTest -->
+    </classes>
+  </test> <!-- Parameters(failed) -->
+</suite> <!-- Failed suite [Parameter Practice] -->
